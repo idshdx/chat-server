@@ -125,7 +125,7 @@ function getServerStats() {
 
 
   return {
-    clientsCount: io.engine.clientsCount - 1 ,
+    clientsCount: io.engine.clientsCount,
     roomsCount: Object.keys(io.sockets.adapter.rooms).length - io.engine.clientsCount
   };
 }
